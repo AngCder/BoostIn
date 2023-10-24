@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../img/DALL·E\ 2023-07-26\ 23.17.00\ -\ imagenes\ para\ el\ fondo\ de\ una\ página\ con\ tematica\ random.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -100;
+    overflow: hidden;
+}
+
+.volver{
+    color: #ff6600;
+    font-size: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    text-shadow: 0px 0px 10px #ff3c3c;
+}
+
+/*NAVBAR*/
+.barrita {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 41px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+.cabeza img {
+    position: absolute;
+    width: 100px;
+}
+
+.barrita ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.barrita a {
+    color: rgba(15, 14, 14, 0.836);
+    text-decoration: none;
+}
+
+.barrita a:hover {
+    color: rgb(36, 0, 56);
+}
+
+/*-----------------------------------------*/
+
+.titulo {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 340px;
+}
+
+.subtitulo {
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 560px;
+}
+
+.btn {
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 640px;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    background-color:rgb(100, 96, 96);
+}
+
+/*Contenido*/
+
+.contenidoB {
+    position: absolute;
+    margin-top: -330px;
+    margin-left: 60px;
+}
+
+.contenidoB ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 20px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+    font-size: 1.38em;
+}
+
+.txt {
+    width: 440px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*CARRUSEL TAPICES*/
+
+.slideshow {
+    margin: 0;
+    padding-top: 50px;
+    height: 500px;
+    box-sizing: border-box;
+    margin-top: -65px;
+    margin-left: 600px;
+}
+
+.content {
+    margin: auto;
+    width: 155px;
+    perspective: 1000px;
+    position: relative;
+    padding-top: 70px;
+    margin-top: -320px;
+    transform: rotate(-15deg);
+}
+
+.content-carrusel {
+    width: 100%;
+    position: absolute;
+    float: right;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrusel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.content-carrusel figure {
+    width: 100%;
+    height: 105px;
+    border: 1px solid #4d444d;
+    overflow: hidden;
+    position: absolute;
+}
+
+.content-carrusel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(300px);
+}
+
+.content-carrusel figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(300px);
+}
+
+.shadow {
+    position: absolute;
+    box-shadow: 0 0 20px 0 #000;
+    border-radius: 5px;
+}
+
+.content-carrusel img {
+    image-rendering: auto;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+}
+
+.content-carrusel img:hover {
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/*sapo*/
+.blanco {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 210px solid transparent;
+    border-left: 700px solid white;
+    border-bottom: 284px solid white;
+    margin-top: 90px;
+}
+
+.blanco2 {
+    width: 0;
+    height: 0;
+    border-top: 210px solid transparent;
+    border-right: 686px solid white;
+    border-bottom: 284px solid white;
+    margin-top: 90px;
+    margin-left: 679px;
+}
+
+/*------------------------------------------*/
